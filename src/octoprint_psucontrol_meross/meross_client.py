@@ -236,11 +236,11 @@ class _OctoprintPsuMerossClientAsync:
             ]
         )
         out = []
-        for device_hanle, (dev_uuid, dev_channel) in zip(devices, uuid_channel_pairs):
-            if not device_hanle:
+        for device_handle, (dev_uuid, dev_channel) in zip(devices, uuid_channel_pairs):
+            if not device_handle:
                 self._logger.error(f"Device {dev_uuid!r} not found.")
                 continue
-            out.append((device_hanle, dev_channel))
+            out.append((device_handle, dev_channel))
         return out
 
     async def set_devices_states(self, dev_ids: Sequence[str], state: bool):

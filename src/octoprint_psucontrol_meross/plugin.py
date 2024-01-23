@@ -47,7 +47,7 @@ class PSUControlMeross(
                 {"name": "Europe", "url": "iotx-eu.meross.com"},
                 {"name": "US", "url": "iotx-us.meross.com"},
             ],
-            "api_base_url": "iotx-us.meross.com",
+            "api_base_url": "iotx-eu.meross.com",
             "user_email": "",
             "user_password": "",
             "target_device_ids": [],
